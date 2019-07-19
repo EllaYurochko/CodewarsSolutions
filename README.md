@@ -162,10 +162,22 @@ function whoIsPaying(name){
    return array; 
 }
 ```
-### 9. 
-[]
+### 9. Sum ALL the arrays!
+[https://www.codewars.com/kata/sum-all-the-arrays/train/javascript]
 *
 ```javaScript
-
-
+function arraySum(arr) {
+  return arr
+    .toString()
+    .split(',')
+    .filter(a => !Number.isNaN(+a))
+    .map(a => +a)
+    .reduce((a, b) => a + b);
+}
+```
+*
+```javaScript
+function arraySum(arr) {
+  return arr.reduce((n, x) => n + (Array.isArray(x) ? arraySum(x) : isNaN(x) ? 0 : x), 0)
+}
 ```
