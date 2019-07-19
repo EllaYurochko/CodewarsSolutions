@@ -162,7 +162,7 @@ function whoIsPaying(name){
    return array; 
 }
 ```
-### 9. Sum ALL the arrays!
+### 9. Sum ALL the arrays! - 7 kyu
 [https://www.codewars.com/kata/sum-all-the-arrays/train/javascript]
 *
 ```javaScript
